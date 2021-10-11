@@ -1,0 +1,31 @@
+.light{
+    .footer{
+        .footer__content{
+            border-color: transparentize($color: $dark-black-color, $amount: 0.5);
+        }
+    }
+}
+.dark{
+    .footer{
+        .footer__content{
+            border-color: transparentize($color: $cloud-color, $amount: 0.5);
+        }
+    }
+}
+
+.footer{
+    max-width: 70rem;
+
+    padding: 0rem 2rem;
+    margin: 2.2rem auto 0rem auto;
+    .footer__content{
+        padding: 1.4rem 0rem;
+
+        border-top: 1px solid black;
+    }
+}
+@media(max-width: 555px) {
+    .footer{
+        margin: 1.2rem auto 0rem auto;
+    }
+}

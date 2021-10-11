@@ -1,0 +1,62 @@
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    .tags__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0.30rem 0.25rem 0.25rem 0.25rem;
+        margin: 0.25rem 0.5rem 0.25rem 0rem;
+
+        border-radius: 0.5rem;
+        svg{
+            width: 1.2rem;
+            height: 1.2rem;
+    
+            margin-left: 0.25rem;
+        }
+        span{
+            margin: 0rem 0.25rem;
+    
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+        &.html5{
+            border: 1px solid transparentize($color: $html5-color, $amount: 0.8);
+            background: transparentize($color: $html5-color, $amount: 0.8);
+        }
+        &.css3{
+            border: 1px solid transparentize($color: $css3-color, $amount: 0.8);
+            background: transparentize($color: $css3-color, $amount: 0.8);
+        }
+        &.scss{
+            border: 1px solid transparentize($color: $scss-color, $amount: 0.8);
+            background: transparentize($color: $scss-color, $amount: 0.8);
+        }
+        &.javascript{
+            border: 1px solid transparentize($color: $javascript-color, $amount: 0.8);
+            background: transparentize($color: $javascript-color, $amount: 0.8);
+        }
+        &.react{
+            border: 1px solid transparentize($color: $react-color, $amount: 0.8);
+            background: transparentize($color: $react-color, $amount: 0.8);
+        }
+        &.redux{
+            border: 1px solid transparentize($color: $redux-color, $amount: 0.8);
+            background: transparentize($color: $redux-color, $amount: 0.8);
+        }
+        &.nodejs{
+            border: 1px solid transparentize($color: $nodejs-color, $amount: 0.8);
+            background: transparentize($color: $nodejs-color, $amount: 0.8);
+        }
+        &.express{
+            border: 1px solid transparentize($color: $express-color, $amount: 0.8);
+            background: transparentize($color: $express-color, $amount: 0.8);
+        }
+        &.mongodb{
+            border: 1px solid transparentize($color: $mongodb-color, $amount: 0.8);
+            background: transparentize($color: $mongodb-color, $amount: 0.8);
+        }
+    }
+}

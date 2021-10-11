@@ -1,0 +1,142 @@
+@import '_colors';
+@import '_fonts';
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    &.light{
+        color: $dark-black-color;
+        background: white;
+        h1, h2, h3, h4{
+            color: black;
+        }
+        a{
+            color: inherit;
+            &.link{
+                color: blue;
+            }
+        }
+        blockquote{
+            color: #585858;
+            border-color: rgba(0, 0, 0, 0.15);
+        }
+        pre{
+            color: $dark-black-color;
+            border-color: rgba(0, 0, 0, 0.15);
+            background: rgba(0, 0, 0, 0.05);
+        }
+    }
+    &.dark{
+        color: $cloud-color;
+        background: $dark-graphite-color;
+        h1, h2, h3, h4{
+            color: white;
+        }
+        a{
+            color: inherit;
+            &.link{
+                color: $grocia-color;
+            }
+        }
+        blockquote{
+            color: #a2a2a2;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+        pre{
+            color: $cloud-color;
+            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.05);
+        }
+    }
+}
+address{
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+blockquote{
+    padding-left: 1.6rem;
+    
+    border-left: 6px solid;
+}
+pre{
+    overflow: auto;
+
+    padding: 1rem;
+
+    border-left: 6px solid;
+}
+
+a{
+    text-decoration: none;
+    text-underline-offset: 0.5rem;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+u{
+    text-underline-offset: 0.5rem;
+}
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 3.4rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.9rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+p, a, span, li, blockquote, pre{
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    p, i, a, u, span, li{
+        font-size: 1em;
+    }
+}
+
+button{
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+}
+
+@media(max-width: 555px) {
+    p, b, i, a, span, ul, ol, li{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    h1, h2, h3, h4, h5{
+        letter-spacing: 0rem;
+    }
+    h1{
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+    h2{
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    h3{
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+    h4{
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
